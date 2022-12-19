@@ -1,0 +1,25 @@
+{% extends "plantilla.html" %}
+
+{% block title %} Crear Post {% endblock %}
+
+{% block content %}
+
+<!– Insertar contenido desde aqui –>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="card">
+            <h5 class="card-header">Posteo</h5>
+            <div class="card-body">
+                {{post_form.as_p}}
+            </div>
+            <button type="submit">Guardar</button>
+            <a href="{% url 'crear_post' %}">Cancelar</a>
+
+        </div>
+
+    </form>
+<!– Insertar contenido hasta aqui –>
+
+
+{% endblock %}
