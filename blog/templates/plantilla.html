@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+
+    <div>
+        {% include "nav.html" %}
+        <h1 style='color:red;'>Senderos, Reserva Educativa Experimental y Granja Autosustentable.</h1>
+        
+    </div>
+
+    <div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+    <footer style='color:red;'>
+    "NOTAS: Pie de pagina (esto forma parte de plantilla.html)"
+
+    <div>
+        <li>
+            <ul><a href="https://www.instagram.com/kchito2028/" target="_blank">Instagram</a></ul>
+            <ul><a href="https://www.facebook.com/profile.php?id=100063478005717" target="_blank">Facebook</a></ul>
+        </li>
+    </div>
+
+
+    </footer>
+</body>
+</html>
